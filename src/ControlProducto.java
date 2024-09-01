@@ -44,4 +44,14 @@ public class ControlProducto {
             System.out.println("Producto no hay existencias del producto buscado.");
         }
     }
+    public double calcularConDescuento(double precio){
+        double porcentaje;
+        porcentaje = 0.10; //10% de descuento
+
+        return precio * porcentaje;
+    }
+    public double calcularConDescuento(double precio, double porcentaje){
+
+        return precio * (porcentaje/100);
+    }
 }

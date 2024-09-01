@@ -24,16 +24,4 @@ public class ProductoDigital extends Producto {
     public void setFormato(String formato) {
         this.formato = formato;
     }
-
-    public double calcularConDescuento(double precio){
-        double porcentaje;
-        porcentaje = 0.10; //10% de descuento
-
-        return precio * porcentaje;
-    }
-    public double calcularConDescuento(double precio, double porcentaje){
-
-        return precio * (porcentaje/100);
-    }
-
 }
