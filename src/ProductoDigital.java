@@ -13,15 +13,19 @@ public class ProductoDigital extends Producto {
         return tamanoArchivo;
     }
 
-    public void setTamanoArchivo(String tamanoArchivo) {
-        this.tamanoArchivo = tamanoArchivo;
-    }
-
     public String getFormato() {
         return formato;
     }
 
+    public void setTamanoArchivo(String tamanoArchivo) {
+        if(utils.validarDato(tamanoArchivo, "Tamaño")) {
+            this.tamanoArchivo = tamanoArchivo;
+        }
+    }
+
     public void setFormato(String formato) {
-        this.formato = formato;
+        if(utils.validarDato(formato, "Formato")) {
+            this.formato = formato;
+        }
     }
 }
