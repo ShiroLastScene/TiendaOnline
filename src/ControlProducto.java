@@ -51,8 +51,7 @@ public class ControlProducto {
         {
             for (Producto producto : productos) {
                 if (producto.getId() == id) {
-                    if (producto instanceof ProductoDigital) {
-                        ProductoDigital productoDigital = (ProductoDigital) producto;
+                    if (producto instanceof ProductoDigital productoDigital) {
                         productoDigital.setFormato(formato);
                         System.out.println("Formato del producto digital actualizado.");
                         return;
@@ -75,8 +74,7 @@ public class ControlProducto {
         {
             for (Producto producto : productos) {
                 if (producto.getId() == id) {
-                    if (producto instanceof ProductoDigital) {
-                        ProductoDigital productoDigital = (ProductoDigital) producto;
+                    if (producto instanceof ProductoDigital productoDigital) {
                         productoDigital.setTamanoArchivo(tamano);
                         System.out.println("Tamaño del producto digital actualizado.");
                         return;
